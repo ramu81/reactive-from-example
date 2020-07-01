@@ -1,0 +1,16 @@
+<style>
+  
+</style>
+
+
+<div class="content" role="main">
+
+     <div>
+      <h2>Job Application for Heroes</h2>
+	  <div>  Time: {{ time | async | date:'mediumTime' }}</div>
+      <app-dynamic-form [questions]="questions$ | async"></app-dynamic-form>
+    </div>
+	
+</div>
+
+<router-outlet></router-outlet>
